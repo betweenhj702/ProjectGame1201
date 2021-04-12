@@ -19,3 +19,5 @@
     * MainWindow 객체 : 클라이언트가 접하는 GUI. 서버 접속, 채팅, 게임 진행 중 사용자의 모든 행위가 MainWindowHandler > Client 를 통해 Server로 전달되고 Server에서 Client로 전달된 데이터가 다시 MainWindow 객체에 전달되어 GUI로 표시해준다.
     * MainWindowHandler 객체 : Swing GUI 에서 이벤트 핸들러.
     * Client 객체 : Socket 객체를 가지고 서버와 연결하고, 서버와 데이터를 주고 받는 객체.
+    * GameCharacter 객체 : 접속한 클라이언트의 캐릭터 정보(캐릭터 색깔, 이름, 점수 등)을 저장하는 객체. 서버 접속 시, 서버 측과 클라이언트 측에 동시에 만들어 줘 정보를 동기화 한다.
+    * GameMode 객체 : 게임의 진행상태를 지정하는 Mode 정보( 게임 준비 상태, 채팅 모드, 게임 시작 모드 등), 서버와 모든 클라이언트 측에서 정보를 동기화해야 한다.
